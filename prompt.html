@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Original — PFO2 Landing Page Agentic</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark:  { DEFAULT: '#09090B', card: '#18181B', border: '#27272A' },
+                        gold:  { DEFAULT: '#C9A84C', light: '#E4CC7A' },
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body:    ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            tab-size: 2;
+        }
+    </style>
+</head>
+
+<body class="bg-dark font-body text-white min-h-screen">
+
+    <header class="border-b border-dark-border bg-dark-card/80 backdrop-blur-md sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 text-gray-400 hover:text-gold transition-colors duration-200 group">
+                <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                <span class="text-sm font-medium">Volver a la Portada</span>
+            </a>
+            <span class="text-gold font-heading font-semibold text-xs tracking-[0.2em] uppercase">Prompt Original</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+        <h1 class="font-heading font-extrabold text-3xl sm:text-4xl mb-2">Prompt <span class="text-gold">Original</span></h1>
+        <p class="text-gray-500 text-sm mb-10">
+            Prompt estructurado y refinado iterativamente en
+            <a href="https://gemini.google.com/share/eefb842d33f5" target="_blank" rel="noopener" class="text-gold hover:underline">Gemini</a>.
+            Este mismo prompt fue entregado a ambos agentes para generar sus respectivas Landing Pages.
+        </p>
+
+        <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden">
+            <div class="flex items-center gap-2 px-5 py-3 border-b border-dark-border bg-dark">
+                <span class="w-3 h-3 rounded-full bg-red-500/60"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/60"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/60"></span>
+                <span class="ml-3 text-xs text-gray-600 font-medium">prompt.txt</span>
+            </div>
+            <pre class="p-5 sm:p-8 text-sm text-gray-300 leading-relaxed font-mono overflow-x-auto">[CONTEXTO Y ROL]
+Actúas como un Ingeniero de Software Senior y Diseñador UX/UI experto. Tu objetivo es generar de forma 100% autónoma todos los archivos necesarios (HTML, CSS y JavaScript si aplica) para una Landing Page profesional, visualmente atractiva, responsiva y totalmente limpia.
+
+[TEMÁTICA]
+El sitio web estará dedicado a: un gimnasio de streetlifting llamado "El Templo".
+
+[REQUISITOS ESTRUCTURALES DE LA INTERFAZ]
+Debes incluir e implementar obligatoriamente las siguientes secciones en un diseño de página única (Single Page Application estética):
+1. Cabecera (Header): Menú de navegación moderno, logo (marcador de posición) y enlaces internos responsivos.
+2. Hero Section: Título principal impactante (Headline), subtítulo persuasivo y un botón destacado de llamada a la acción (CTA).
+3. Sobre Nosotros: Breve descripción narrativa de la marca/servicio con un diseño limpio.
+4. Servicios o Características: Grilla o contenedor con las características principales o planes del servicio, usando iconos o componentes visuales atractivos.
+5. Testimonios: Sección de reseñas o prueba social con avatares y citas de clientes de ejemplo.
+6. Formulario de Contacto: Maquetado visual completo de un formulario (campos de Nombre, Email, Mensaje y botón de envío). No requiere funcionalidad backend, pero debe ser interactivo en el frontend.
+7. Pie de Página (Footer): Copyright, enlaces secundarios y enlaces simulados a redes sociales.
+
+[REQUISITOS TÉCNICOS Y ESTILO]
+- Framework recomendado: Utiliza Tailwind CSS (vía CDN en el &lt;head&gt;) para garantizar un diseño estilizado, moderno y mobile-first sin necesidad de archivos CSS externos complejos.
+- Interactividad: Agrega animaciones suaves al hacer scroll y la lógica necesaria en JavaScript para que el menú móvil sea funcional (hamburguesa).
+- Componentes: Usa componentes visuales limpios, tipografías legibles (ej. Inter o Montserrat desde Google Fonts) y un esquema de colores coherente con la temática.
+
+[RESTRICCIÓN CRÍTICA DE EJECUCIÓN]
+Genera el código completo de extremo a extremo de forma autónoma. No dejes marcadores de posición vacíos como "// TODO:" o "...". El resultado debe estar listo para producción y ser auto-contenido para que funcione inmediatamente al abrirse en el navegador.</pre>
+        </div>
+
+        <div class="mt-8 p-5 bg-dark-card border border-dark-border rounded-xl">
+            <p class="text-gray-400 text-xs leading-relaxed">
+                <strong class="text-gold">Nota:</strong> Este prompt fue refinado a través de iteraciones sucesivas en
+                <a href="https://gemini.google.com/share/eefb842d33f5" target="_blank" rel="noopener" class="text-gold hover:underline">Gemini</a>,
+                donde se ajustó el contexto, los requisitos estructurales, los aspectos técnicos y las restricciones hasta obtener
+                una especificación clara y accionable para ambos agentes de IA.
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>

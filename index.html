@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFO2 — Landing Page Agentic | Portada</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark:  { DEFAULT: '#09090B', card: '#18181B', border: '#27272A' },
+                        gold:  { DEFAULT: '#C9A84C', light: '#E4CC7A' },
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body:    ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        .card-hover {
+            transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px -12px rgba(201, 168, 76, 0.15);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.25s; opacity: 0; }
+        .delay-3 { animation-delay: 0.4s; opacity: 0; }
+    </style>
+</head>
+
+<body class="bg-dark font-body text-white min-h-screen flex flex-col">
+
+    <main class="flex-1 flex items-center justify-center px-4 py-16">
+        <div class="w-full max-w-4xl mx-auto text-center">
+
+            <!-- Header -->
+            <div class="fade-in mb-5">
+                <span class="inline-block text-gold font-heading font-semibold text-xs sm:text-sm tracking-[0.3em] uppercase px-4 py-1.5 border border-gold/20 rounded-full bg-gold/5">
+                    PFO 2 — Individual
+                </span>
+            </div>
+
+            <h1 class="fade-in delay-1 font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-4 tracking-tight">
+                Landing Page<br>
+                <span class="text-gold">Agentic</span>
+            </h1>
+
+            <p class="fade-in delay-2 text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-4 leading-relaxed">
+                Dos agentes de IA. Un mismo prompt. Dos implementaciones de una Landing Page para
+                <strong class="text-white">El Templo</strong>, gimnasio de streetlifting.
+            </p>
+
+            <p class="fade-in delay-2 text-xs text-gray-600 mb-12">
+                Materia: Desarrollo de Sistemas Web (Front End) — 2° D &nbsp;|&nbsp; IFTS 29
+            </p>
+
+            <!-- Cards Grid -->
+            <div class="grid sm:grid-cols-3 gap-5 sm:gap-6">
+
+                <!-- Card 1: Prompt -->
+                <a href="prompt.html"
+                   class="card-hover fade-in delay-3 group flex flex-col items-center justify-center bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-8 text-center min-h-[220px] hover:border-gold/30">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-heading font-bold text-lg mb-2 group-hover:text-gold transition-colors duration-300">Prompt Original</h2>
+                    <p class="text-gray-500 text-xs leading-relaxed">Texto plano del prompt estructurado y refinado iterativamente en Gemini.</p>
+                    <span class="inline-flex items-center gap-1 mt-4 text-gold text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Ver prompt <span aria-hidden="true">→</span>
+                    </span>
+                </a>
+
+                <!-- Card 2: Opencode -->
+                <a href="Opencode/index.html"
+                   class="card-hover fade-in delay-3 group flex flex-col items-center justify-center bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-8 text-center min-h-[220px] hover:border-gold/30">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-heading font-bold text-lg mb-2 group-hover:text-gold transition-colors duration-300">Agente 1</h2>
+                    <p class="text-gray-300 text-sm font-semibold">sdd-orchestrator</p>
+                    <p class="text-gray-500 text-xs">deepseek-v4-pro</p>
+                    <span class="inline-flex items-center gap-1 mt-4 text-gold text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Ver Landing <span aria-hidden="true">→</span>
+                    </span>
+                </a>
+
+                <!-- Card 3: Antigravity -->
+                <a href="Antigravity/index.html"
+                   class="card-hover fade-in delay-3 group flex flex-col items-center justify-center bg-dark-card border border-dark-border rounded-2xl p-6 sm:p-8 text-center min-h-[220px] hover:border-gold/30">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-5 group-hover:bg-gold/20 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h2 class="font-heading font-bold text-lg mb-2 group-hover:text-gold transition-colors duration-300">Agente 2</h2>
+                    <p class="text-gray-300 text-sm font-semibold">Gemini</p>
+                    <p class="text-gray-500 text-xs">3.5 Flash (Medium)</p>
+                    <span class="inline-flex items-center gap-1 mt-4 text-gold text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Ver Landing <span aria-hidden="true">→</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Footer info -->
+            <div class="fade-in delay-3 mt-14 pt-8 border-t border-dark-border">
+                <p class="text-gray-500 text-xs">
+                    Marcelo Javier Moreno &nbsp;|&nbsp; Tecnicatura en Desarrollo de Software &nbsp;|&nbsp; IFTS 29
+                </p>
+                <div class="flex items-center justify-center gap-4 mt-3">
+                    <a href="https://github.com" target="_blank" rel="noopener" class="text-gray-600 hover:text-gold text-xs transition-colors duration-200">GitHub</a>
+                    <span class="text-dark-border">|</span>
+                    <a href="https://gemini.google.com/share/eefb842d33f5" target="_blank" rel="noopener" class="text-gray-600 hover:text-gold text-xs transition-colors duration-200">Conversación Gemini</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
