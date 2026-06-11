@@ -26,7 +26,7 @@ Proyecto correspondiente a la Prueba de Formación Obligatoria N° 2 (Individual
 
 ## Deploy Unificado
 
-> **Vercel:** [Por definir — pendiente de deploy]
+> **GitHub Pages:** [https://javiacode.github.io/pfo2-landing-page-agentic/](https://javiacode.github.io/pfo2-landing-page-agentic/)
 
 Una vez deployado, este único enlace dirige a la **portada** (`index.html`) desde la cual se accede a las tres secciones del proyecto:
 1. Prompt original utilizado
