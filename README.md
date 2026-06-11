@@ -95,15 +95,27 @@ El siguiente prompt fue estructurado y refinado iterativamente en [Gemini](https
 
 ### Portada Unificada
 
-> *[Pendiente — capturar una vez deployado]*
+![Portada — Accesos directos](screenshots/01-portada.png)
 
 ### Landing Page — Agente 1 (sdd-orchestrator / deepseek-v4-pro)
 
-> *[Pendiente — capturar secciones principales: Hero, Servicios, Contacto]*
+**Vista completa:**
+
+![Opencode — Landing Page completa](screenshots/02-opencode-desktop.png)
+
+**Hero Section:**
+
+![Opencode — Hero](screenshots/03-opencode-hero.png)
 
 ### Landing Page — Agente 2 (Gemini / 3.5 Flash)
 
-> *[Pendiente — capturar secciones principales: Hero, Servicios, Contacto]*
+**Vista completa:**
+
+![Antigravity — Landing Page completa](screenshots/05-antigravity-desktop.png)
+
+**Hero Section:**
+
+![Antigravity — Hero](screenshots/06-antigravity-hero.png)
 
 ---
 
@@ -113,7 +125,7 @@ El siguiente prompt fue estructurado y refinado iterativamente en [Gemini](https
 - **Google Fonts** — Montserrat (headings) + Inter (body)
 - **JavaScript Vanilla** — Interactividad sin dependencias externas
 - **Intersection Observer API** — Animaciones al hacer scroll
-- **Vercel** — Plataforma de deploy
+- **GitHub Pages** — Plataforma de deploy
 
 ---
 
